@@ -1,95 +1,325 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Securitization</title>
+    <title>Securitization</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <!-- <link rel="stylesheet" href="css/theme/black.css"> -->
+    <link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-		  <div class="slides">
-		    			  <section>
-					    <h3>What should make sense by the end of this presentation ...</h3>
-					    	<p class="fragment current-visible">How securitization makes financing assets cheaper.</p>
-					    	<p class="fragment current-visible">and show it makes some assets receive financing that otherwise wouldn't</p>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section data-background-image="./city_skyline.jpg">
+	  <h2>SECURITIZATION</h2>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	</section>
+	<section>
+	  <h3>What should make sense by the end of this presentation ...</h3>
+	  <p class="fragment fade-in">How securitization makes <b class="fragment highlight-green">financing assets cheaper</b>,</p>
+	  <p class="fragment fade-in">and how it makes some assets receive financing that otherwise <b class="fragment highlight-red">wouldn't</b></p>
+	</section>
+	<section>
+	  <h3>Securitization means ...</h3>
 
-					  </section>
-			  <section data-transition="slide-in fade-out">
-			    <h2>What is Securitization?</h2>
-			    <p> Text </p>
-			    <p class="fragment fade-up">fade-up (also down, left and right!)</p>
-	<p class="fragment current-visible">visible only once</p>
-	<p class="fragment highlight-current-blue">blue only once</p>
-			  </section>
-			  
-			  <section>
-			  <section>
-			    <h3>What can we securitize?</h3>
-			    <p style="text-align:left;" class="fragment current-visible">
-			      We can securitize any asset which generates a stream of cash flows. These are often financial assets such as loans, but can also be leases and other trade receivables.
-			    </p>
-			    <p style="text-align:left;" class="fragment current-visible">
-			      To securitize an asset it is necessary to be able to estimate parameters of the assets' cash flows, such as expected cash flows and the standard deviation. The ownership of the assets must also be transferable.
-			    </p>
-			    </section>
-			    <section>
-			    <p style="text-align:left;">Assets are more appropriate for securitization if:</p>
-<ul>
-<li class="fragment highlight-current-blue">they provide diversification---geographic or economic.</li>
-<li class="fragment highlight-current-blue">there is a large number of assets.</li>
-<li class="fragment highlight-current-blue">there correlation structure is known, and the assets preferably have low correlations.</li>
-<li class="fragment highlight-current-red"> Correlation is key...</li>
-</ul>
+	  <p>The transformation of a set of (generally) illiquid assets into a tradeable portfolio of these assets.</p>
+	  <ul>
+	    <li class="fragment highlight-current-blue">A classic example is a set of mortgage loans.  Each loan alone is not a tradeable security, however a portfolio of thousands of mortgages can be packaged and turned into a security.</li>
+	    <li class="fragment highlight-current-blue">However we can securitize a side variety of assets---David Bowie famously securitized royalty payments for his songs.</li>
+	  </ul>
+	</section>
+	
+	<section>
+	  <section>
+	    <h3>What can we securitize?</h3>
+	    <p style="text-align:left;" class="fragment current-visible">
+	      We can securitize any asset which generates a stream of cash flows. These are often financial assets such as loans, but can also be leases and other trade receivables.
+	    </p>
+	    <p style="text-align:left;" class="fragment current-visible">
+	      To securitize an asset it is necessary to be able to estimate parameters of the assets' cash flows, such as expected cash flows and the standard deviation. The ownership of the assets must also be transferable.
+	    </p>
+	  </section>
+	  <section>
+	    <p style="text-align:left;">Assets are more appropriate for securitization if:</p>
+	    <ul>
+	      <li class="fragment highlight-current-blue">they provide diversification---geographic or economic.</li>
+	      <li class="fragment highlight-current-blue">there is a large number of assets.</li>
+	      <li class="fragment highlight-current-blue">there correlation structure is known, and the assets preferably have low correlations.</li>
+	      <li class="fragment highlight-current-red"> Correlation is key...</li>
+	    </ul>
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h3>Why Securitize Assets?</h3>
+	    <p style="text-align:left;">
+	      There are many benefits to securitization such as:
+	    </p>
+	    <ul>
+	      <li class="fragment highlight-current-blue">diversification</li>
+	      <li class="fragment highlight-current-blue">financial engineering---structuring tranches to meet risk-reward profiles, and investment horizons, desired by present market participants. This allows us to target risk/return profiles which are desirable to a larger pool of investors.</li>
+	      <li class="fragment highlight-current-blue">increased liquidity.</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <ul>
+	      <li class="fragment highlight-current-blue">lower transaction costs to transfer assets in a secondary market.</li>
+	      <li class="fragment highlight-current-blue">it moves illiquid assets off of a firm's balance sheet (where they may be subject to a higher discount rate).  The originator receives an immediate lump sum in exchange for future payments, and therefore can make new loans.</li>
+	      <li class="fragment highlight-current-blue">ultimately, lowers funding costs for individuals and corporations, and securitization may allow the financing of assets that would not receive financing individually.</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <ul>
+	      <li class="fragment highlight-current-blue">Separates the credit rating of the originator from the security.  This means the security can have a higher credit rating (and therefore lower yield) that if it were help on the originators balance sheet.</li>
+	      <li class="fragment highlight-current-blue">Facilitates geographic dispersion of funding to areas underserved by depository institutions.</li>
+	      <li class="fragment highlight-current-blue">Issuers can tailor the maturity, yield, and seniority to suit investor preference. </li>
+	    </ul>
+	  </section>
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+  <iframe src="https://micfm.shinyapps.io/markowitz_app1/" height="100%" width="100%"></iframe>
+</div>
+	    <!-- <a href="https://micfm.shinyapps.io/markowitz_app1/" data-preview-link>Interact with Diversification</a> -->
+	    <!-- <iframe width="100%" height="100%" src="https://www.w3schools.com"></iframe> -->
+	  </section>
+	</section>
 </section>
-			  </section>
 
-			  <section>
-			    <section data-background-image="mi.png" data-background-size="1000px"> </section>
-			    <section>
-			      <h3>Matt Brigida</h3>
-			      Contact:
-			    </section>
-			    <section> <a href="https://github.com/Matt-Brigida/securitization-presentation">Presentation Code</a>  </section>
-			    <section> Spreadsheet:  </section>
-			  </section>
+<!-- start background and history -->
 
-			  
-			</div>
-		</div>
+	<section>
+	  <section>
+	    <h3>Background and History</h3>
+	    <p style="text-align:left;">
+Securitization was an effectively non-existent industry in the 1970s, and has since grown to annual issuance in the <b class="fragment highlight-green">trillions</b> of dollars.
+	    </p>
+	    <ul>
+	      <li>In the 1970s Ginnie Mae, Fannie Mae, and Freddie Mac started providing a guarantee on mortgage pass-through securities.  This made obtaining mortgage financing much easier for consumers, because securitization allowed lenders to easily move mortgages off their balance sheet if they needed to, or were concerned about interest rate risk.</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <ul>
+	      <li>These MBS were successful, and in an attempt to widen the investor base Fannie Mae issued the first Collateralized Mortgage Obligation (CMO) in 1983. CMOs sought to address <b class="fragment highlight-red">pre-payment risk</b> in MBS by separating the security into tranches which determine payment precedence.</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <ul>
+	      <li>In 1985 Sperry Lease Finance Corp. securitized computer equipment leases in one of the first Asset Backed Security (ABS) offerings.  Since it has become common to securitize <b class="fragment highlight-current-blue">auto loans</b>, <b class="fragment highlight-current-blue">credit card receivables</b>, <b class="fragment highlight-current-blue">student loans</b>, <b class="fragment highlight-current-blue">entertainment royalties</b>, and <b class="fragment highlight-current-blue">home equity loans</b> among other assets.</li>
+	    </ul>
+	  </section>
+	  <section>
+From Moody's, <a href="https://www.moodys.com/sites/products/ProductAttachments/Spotlight%20on%20structured%20finance.pdf">Securitization Finances 30% of US Capital Markets Funding Needs Annually and 40% Historically</a>
+	  </section>
+	</section>
+</section>
+
+<!-- end background and history -->
+
+<!-- start steps in process section -->
+<section>
+<section>
+  <h3>Steps in the Securitization Process</h3>
+  <ol>
+    <li>  Assets are created.  For example this is the origination of a loan. </li>
+    <li> A special purpose vehicle (SPV) is created and ownership of the assets is transferred to the SPV.  The original owners receive a sales price.</li>
+    <li> A claim structure, and credit enhancements, are added to the cash flows generated by the assets in the SPV.  The SPV issues the claims as securities.</li>
+    <li> NRSROs rate the claims.  This is important from a regulatory standpoint.  It affects who can purchase the securities.</li>
+  </ol>
+</section>
+<!-- <section data-background-image='./fdic_sec_chart.jpg' data-background-size="1000px"> -->
+<section>
+  <h5><a href="https://www.fdic.gov/regulations/examinations/supervisory/insights/sisum08/article01_transparency.html">Source: fdic.gov</a></h5>
+  <image class="stretch" src="./fdic_sec_chart.jpg"></image>
+</section>
+</section>
+<!-- end steps in process section -->
+
+<!-- start isolation section -->
+<section>
+  <h3>Isolation</h3>
+  <p style="text-align:left;">A key point of securitization is to isolate the assets (and the cash flows they generate) from the originator of the assets.</p>
+  <ul>
+    <li>The originator may thereafter act as a servicer of the assets, but ultimately is not liable for payments.</li>
+    <li>The transfer of ownership from the originator to the SPV is a "true sale".</li>
+  </ul>
+</section>
+<!-- end isolation section -->
+
+<!-- start participants in securitization -->
+<section>
+<section>
+  <h3>Participants in Securitizations</h3>
+  <ul>
+    <li><b class="fragment highlight-current-blue">Originator</b>:  entity who initially originated the loan or asset.</li>
+    <li><b class="fragment highlight-current-blue">Special Purpose Vehicle</b>:  a legally separate entity which holds the assets bought from the originator.</li>
+    <li><b class="fragment highlight-current-blue">Trust</b>:  the assets may be held by the SPV, or ultimately transferred to a trust.</li>
+    <li><b class="fragment highlight-current-blue">Underwriters</b>:  guarantee sufficient payment for the securities, from investors, to the SPV or trust.  These are often investment banks who also assist in structuring the securitization.</li>
+  </ul>
+</section>
+<section>
+  <ul>
+    <li><b class="fragment highlight-current-blue">Dealers</b>:  make a secondary market in the security.</li>
+    <li><b class="fragment highlight-current-blue">Rating agencies (NRSROs)</b>:  determine the likelihood of default (amount of credit risk) in the security. This is done on an ongoing basis.  Such ratings are not required if the security will be sold in a private placement, however most ABS and MBS are rated.  The ratings determine which sets of investors can buy the security.</li>
+    <li><b class="fragment highlight-current-blue">Insurers</b>:  Private companies and government agencies ensure payment for a fee or through credit default swaps.</li>
+</section>
+<section>
+  <ul>
+        <li><b class="fragment highlight-current-blue">Servicers</b>:  collects payments from borrowers (or asset) and forwards them through to the SPV.  The servicer earns a fee for this work.</li>
+    <li><b class="fragment highlight-current-blue">Investors</b>:  households, institutions, and governments.  Affected by whether NRSROs rate the security as "investment-grade".</li>    
+  </ul>
+</section>
+</section>
+
+<!-- end participants in securitization -->
+
+<!-- start credit enhancement  -->
+<section>
+  <section>
+    <h3>Credit Enhancement</h3>
+    <p style="text-align:left;">There are various types of *Credit Enhancement* which may be used to lessen the risk borne by investors in a securitization.  A few common examples are below:</p>
+    <ul>
+      <li><b class="fragment highlight-current-blue">Tranching</b>: assigning subsets of the security first, second, third, etc claim on the cash flows from the underlying assets.  Cash flows form a *waterfall* down through the tranches, and so losses are incurred from the bottom tranche up.  This doesn't lessen the risk of the overall security---just transfers risk from one subset of the security's investors to another.
+      </li>
+    </ul>
+  </section>
+  <section>
+    <ul>
+      <li><b class="fragment highlight-current-blue">Overcollateralization</b>: the security collateral exceeds the value of the security ensuring, that even with some default on underlying assets, the security can make timely payments.</li>
+      <li><b class="fragment highlight-current-blue">Third-party guarantee</b>:  an entity assumes some of the bondholders' risk.  This may be through forms of bond insurance, and maybe purchased form private entities, or often the government (for example the guarantees provided by Fannie Mae and Freddie Mac in the U.S.).</li>
+</ul>
+  </section>
+</section>
+
+<!-- end credit enhancement  -->
+
+<section>
+<section>
+  <h3>Is There a Downside?</h3>
+  <p style="text-align:left;">This process relies on the <b class="fragment highlight-red">investors ability to determine the underlying asset credit risk</b>, and thereby relies on credit rating agencies.  If the risk is assessed incorrectly, this will cause misallocation of funds.</p>
+    <ul>
+      <li>This can be exacerbated by complex capital structures, the separation of ownership and origination (originate-to-distribute), and the origination incentive system.  </li>
+
+    </ul>
+</section>
+<section>
+  <ul>
+        <li>Since securitization is a powerful tool to funnel capital to borrowers, the misallocation of this capital may cause substantial distortions, such as in the housing market prior to 2008.</li>
+	<li>See <a href="https://www.imf.org/external/pubs/ft/wp/2013/wp13255.pdf">Securitization: Lessons Learned and the Road Ahead</a> for a good summary of how components of the securitization process failed in the lead-up to the 2008 financial crisis.</li>
+  </ul>
+</section>
+</section>
+
+<section>
+  <section>
+    <h2> An Example</h2>
+  </section>
+
+  <section>
+    <p style="text-align:left;"><b class="fragment highlight-red">The Problem</b>: The <b class="fragment highlight-red">risks</b> and costs of biomedical research have increased due to underlying factors in the research and approval process.  This has lessened the ability of traditional public and private equity to finance such research---particular given their investment horizon constraints and more stringent requirements on real-time pricing of investments.
+</p>
+  </section>
+  <!-- <section data-background-image="https://wallpapercave.com/w/cFdJSqI"> -->
+  <section data-background-image='./death_valley.jpg'>
+    <p style="text-align:left;">This has caused a funding gap in biomed research, often referred to as the "<b class="fragment highlight-red">valley of death</b>".
+  </section>
+  <section>
+    
+    <p style="text-align:left;">In 2010 <b class="fragment highlight-green">$48 billion</b> was spent on basic research in drug development, <b class="fragment highlight-red">$7 billion</b> was spent on translating that into marketable componds, and <b class="fragment highlight-green">$52 billion</b> was spent on clinical development (Fagnan et al 2013).</p>
+  </section>
+  <section>
+    <p style="text-align:left;">Attempts are being made to use securitization structures to fund biomed research through selling "<b class="fragment highlight-blue">Research Backed Obligations</b>", which importantly have bond-like tranches, and investment horizons which are acceptable to investors.</p>
+    <p style="text-align:left;">The primary market for bonds is much larger than equity.</p>
+  </section>
+  <section>
+    <h3>Cash Flows</h3>
+    <p style="text-align:left;">Assume the following cash flows for an investment in drug-development if the drug is a success, and failure, respectively.</p>
+    <ul>
+      <li> <b class="fragment highlight-green">Success</b>: $200 million cost at time 0, no cash flows in years 1 through 10, and $2 billion a year in years 11 through 20.</li>
+      <li> <b class="fragment highlight-red">Failure</b>: $200 million cost at time 0, and no further cash flows.</li>
+  </section>
+  <section>
+    <h3>Probabilities</h3>
+        <p style="text-align:left;">Further, assume the following probabilities of success and failure.</p>
+    <ul>
+      <li> <b class="fragment highlight-green">Success</b>: 5%</li>
+      <li> <b class="fragment highlight-red">Failure</b>: 95%</li>
+  </section>
+  <section>
+    <h3>Parameters of an Individual Asset</h3>
+    <ul>
+      <li>Expected Return: 11.9%</li>
+      <li>Standard Deviation: <b class="fragment highlight-red">423%</b></li>
+    </ul>
+  </section>
+    <section>
+      <h3>Parameters of a RBO Backed by 150 Assets</h3>
+      <p style="text-align:left;">Assuming the assets are independently and identically distributed (=> pairwaise <b class="fragment highlight-blue">correlation is 0</b>%).</p>
+    <ul>
+      <li>Expected Return: 11.9%</li>
+      <li>Standard Deviation: <b class="fragment highlight-green">34.6%</b></li>
+    </ul>
+    </section>
+    <section>
+      <h3>...but this requres a much greater capital committment.</h3>
+    </section>
+    <section>
+      <h5>See the spreadsheet link at the end for parameters of the portfolio when financed by debt and equity</h5>
+    </section>
+</section>
+  
+
+<section>
+  <section data-background-image="mi.png" data-background-size="1000px"> </section>
+  <section>
+    <h3>Matt Brigida</h3>
+    Contact:
+  </section>
+  <section> <a href="https://github.com/Matt-Brigida/securitization-presentation">Presentation Code</a>  </section>
+  <section> Spreadsheet:  </section>
+</section>
+
+	
+      </div>
+    </div>
 
 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+    </script>
+  </body>
 </html>
